@@ -1,0 +1,63 @@
+- !<AssetImportMetadata/2c541b6b-b522-49e8-988b-40f5f4116d1b>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 488834eb-cb5d-40c3-aa04-3d1a14d76974
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 488834eb-cb5d-40c3-aa04-3d1a14d76974
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> fe71e065-1160-493c-83e7-f63eb8ae3c26
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/fe71e065-1160-493c-83e7-f63eb8ae3c26>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: daa6c71b-94bf-4a7b-8133-fc7d28cb07bd
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    arcSpanDegrees: false
+    columnGapDegrees: false
+    columns: false
+    radiusCm: false
+    rowGapCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - radiusCm: !<float> 165.000000
+      arcSpanDegrees: !<float> 100.000000
+      columns: !<float> 8.000000
+      rowGapCm: !<float> 14.000000
+      columnGapDegrees: 1.500000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">DraftDayCardFieldController – Arranges player cards in a wraparound 3D arc around the user</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float radiusCm = 165 {"hint":"Distance from the user to the card arc, in centimeters. Cards are uniformly scaled by radiusCm/110 so apparent (angular) size stays constant regardless of distance.", "widget":"slider", "min":100, "max":220, "step":5}'
+    - '// @input float arcSpanDegrees = 100 {"hint":"Target horizontal angular span the card arc covers, in degrees (split evenly left/right of center). Widened automatically if columnGapDegrees would otherwise force card overlap.", "widget":"slider", "min":30, "max":160, "step":5}'
+    - '// @input float columns = 8 {"hint":"Max card columns per row before wrapping to the next row", "widget":"slider", "min":1, "max":10, "step":1}'
+    - "// @input float rowGapCm = 14 {\"hint\":\"Target vertical gap between card rows, in centimeters, before distance scaling. Enlarged automatically if it would otherwise be smaller than a scaled card's height plus a 2cm buffer.\", \"widget\":\"slider\", \"min\":8, \"max\":40, \"step\":1}"
+    - "// @input float columnGapDegrees = 1.5 {\"hint\":\"Minimum angular gap between adjacent columns beyond each card's own angular width, in degrees — the floor arcSpanDegrees/columns is widened to respect\", \"widget\":\"slider\", \"min\":0, \"max\":20, \"step\":0.5}"
+    - '// @ui {"widget":"group_end"}'

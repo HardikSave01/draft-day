@@ -1,0 +1,60 @@
+- !<AssetImportMetadata/fd5d0abe-ef48-44ee-a694-4f69e384e8bd>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 5bce8843-8046-4b78-b80d-cbb8771c541f
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 5bce8843-8046-4b78-b80d-cbb8771c541f
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> e6d7b7e4-59a7-4799-80c0-2837fa7a452e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/e6d7b7e4-59a7-4799-80c0-2837fa7a452e>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: c6f5670f-d02d-4c47-8ae1-d1835457dd45
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    activeFilterColor: false
+    liveColor: false
+    offlineColor: false
+    titleText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - titleText: Draft Day
+      liveColor: !<Vec3> {x: 0.450000, y: 0.900000, z: 0.550000}
+      offlineColor: !<Vec3> {x: 0.950000, y: 0.750000, z: 0.300000}
+      activeFilterColor: !<Vec4> {x: 1.000000, y: 0.850000, z: 0.300000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">DraftDayControlsUI – Top bar: title, live/offline status, refresh, position filters</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input string titleText = "Draft Day" {"hint":"Panel title text shown next to the football icon"}'
+    - '// @input vec3 liveColor = "{0.45,0.9,0.55}" {"hint":"Authored live-source tint. Currently unused: the status line runs in neutral ink and the wifi / cloud-off icon carries the distinction, so no hue is spent on it.", "widget":"color"}'
+    - '// @input vec3 offlineColor = "{0.95,0.75,0.3}" {"hint":"Authored fallback tint. Currently unused — see the live tint above.", "widget":"color"}'
+    - '// @input vec4 activeFilterColor = "{1,0.85,0.3,1}" {"hint":"Authored active-tab color. Currently unused: the active tab is a dark face with a white label, which reads at distance without spending a hue.", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

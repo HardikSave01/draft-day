@@ -1,0 +1,63 @@
+- !<AssetImportMetadata/eeb881b2-a066-4422-9442-11abe264baa9>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> fc7aa53c-c0eb-4c58-90a7-69747dbfe8b5
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> fc7aa53c-c0eb-4c58-90a7-69747dbfe8b5
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 31163d85-b9fa-4c3a-9a18-ef2c9ff33794
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/31163d85-b9fa-4c3a-9a18-ef2c9ff33794>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: bb857106-7abc-4240-bbf3-5eab971a898b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    accentColor: false
+    emptyHintText: false
+    panelHeight: false
+    panelWidth: false
+    zoneLabel: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - zoneLabel: QB
+      accentColor: !<Vec3> {x: 0.900000, y: 0.450000, z: 0.450000}
+      panelWidth: !<float> 24.000000
+      panelHeight: !<float> 30.000000
+      emptyHintText: drop cards here
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">DraftDayZoneUI – One tier drop-zone panel: position label, stack count, card mount point</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - "// @input string zoneLabel = \"QB\" {\"hint\":\"Position label shown in this zone's header (QB / RB / WR / TE)\"}"
+    - '// @input vec3 accentColor = "{0.9,0.45,0.45}" {"hint":"Header label tint; match the matching position badge color on the cards", "widget":"color"}'
+    - '// @input float panelWidth = 24 {"hint":"Zone panel width in centimeters", "widget":"slider", "min":16, "max":36, "step":0.5}'
+    - '// @input float panelHeight = 30 {"hint":"Zone panel height in centimeters", "widget":"slider", "min":18, "max":44, "step":0.5}'
+    - '// @input string emptyHintText = "drop cards here" {"hint":"Caption shown inside the zone while its stack is empty"}'
+    - '// @ui {"widget":"group_end"}'
