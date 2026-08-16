@@ -53,3 +53,7 @@ Lens Studio, Spectacles Interaction Kit v0.18.0, TypeScript. Written with CLAD.
 ## CLAD prompt log
 
 Raw, unedited session transcripts are in [`/clad-log`](./clad-log).
+
+## How this was built
+
+The CLAD execution story — where the first answer was wrong, how it was caught, and what was corrected — is in [CLAD_EXECUTION.md](./CLAD_EXECUTION.md).
