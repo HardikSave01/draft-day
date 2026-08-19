@@ -2,6 +2,8 @@
 
 A spatial fantasy football draft companion for Spectacles, built with CLAD in Lens Studio.
 
+**[Watch the demo video](https://youtu.be/KvFK7fFaFgo)**
+
 ## What it does
 
 Draft Day puts your draft board in the room instead of on a second screen. Real ADP rankings appear as grabbable cards floating in an arc around you. You pinch a player, drop him into a position zone, and your roster builds itself in space while your eyes stay on the video call with your league.
